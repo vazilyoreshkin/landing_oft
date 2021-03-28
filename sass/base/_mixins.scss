@@ -1,0 +1,26 @@
+@mixin phone {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: -14%;
+        width: 36px;
+        height: 36px;
+        background: url(../icons/phone-icon.png) center no-repeat;
+    }
+    
+}
+
+@mixin logo {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: -45px;
+        width: 31px;
+        height: 44px;
+        background: url(../icons/logo.jpg) center no-repeat;
+    }
+}

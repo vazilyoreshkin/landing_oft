@@ -1,0 +1,48 @@
+header{ 
+    padding: 10px 0 10px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+}
+.header{
+    &__item{
+        font-weight: 700;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-around;
+    }
+    &__about{
+        line-height: normal;
+        &-title{
+            position: relative;
+            font-size: 12px;
+            color: #009ad2;
+            text-transform: uppercase;
+            @include logo;
+        }
+        &-subtitle{
+            text-transform: uppercase;
+            color: #009ad2;
+            font-size: 43px;
+        }
+        &-desc{
+            font-size: 25px;
+            color: red;
+            text-transform: uppercase;
+        }
+    }
+    &__text{
+        font-size: 22px;
+        color: #009ad2;
+        text-align: center;
+    }
+    &__phone{
+        line-height: 27px;
+        &-text{
+            font-size: 31px;
+            position: relative;
+            color: #009ad2;
+            @include phone;
+        }
+    }
+}
