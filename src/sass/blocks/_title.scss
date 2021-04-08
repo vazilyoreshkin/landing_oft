@@ -2,5 +2,14 @@
     &__section-title{
         color: #fff;
         font-size: 61px;
+            &-black{
+            color: black;
+            text-align: center;
+        }
+        &-black{
+            color: black;
+            text-align: center;
+            padding-top: 40px;
+        }
     }
 }
