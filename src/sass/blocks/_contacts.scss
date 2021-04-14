@@ -1,0 +1,54 @@
+.contacts{
+        background-color:aliceblue;
+        padding-top: 10px;
+    &__video{
+        position: relative;
+        padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+        height: 0;
+        overflow: hidden;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            outline-width: 0;
+        }
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat (6,auto);
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        &-form{
+            display: grid;
+            grid-template-columns: 1fr;
+            &:nth-child(2n){
+                padding-bottom: 28px;
+            }
+            &-title{
+                text-align: center;
+                color: #009ad2;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 300;
+            }
+            .cross{
+                margin: 0 auto;
+                top: -2px;
+                @include cross;
+                color: red;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                transform:rotate(90deg);
+                -ms-transform:rotate(90deg); /* IE 9 */
+                -webkit-transform:rotate(90deg); /* Safari and Chrome */
+            }    
+        }
+        
+    }
+}

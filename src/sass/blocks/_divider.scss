@@ -1,0 +1,17 @@
+.divider{
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    &__bottom{
+        border: none; /* Убираем границу */
+        background-color: red; /* Цвет линии */
+        color: red; /* Цвет линии для IE6-7 */
+        height: 2px; /* Толщина линии */
+        width: 800px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,45 @@
+.attention{
+    background: url('../img/Veshikova1.jpg') center no-repeat;;
+    min-height: 134vh;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 760px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__desc{
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+        font-style: italic;
+        text-align: justify;
+    }
+    &__look{
+        color:#009ad2;
+        font-style: normal;
+
+    }
+    &__subtitle{
+        font-size: 20px;
+        color: #009ad2;
+        font-weight: 600;
+        font-style: italic;
+        text-align: justify;
+        &-small{
+            text-align: center;
+            font-size: 29px;
+            font-weight: bold;
+        }
+        &-warning{
+            color: #009ad2;
+            font-weight: 700;
+            font-size: 22px;
+            text-align: left;
+        }
+    }
+    li{
+        list-style-image: url("../icons/check-red-icon.png");
+    }
+    
+
+}

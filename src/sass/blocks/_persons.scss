@@ -1,0 +1,44 @@
+.persons{
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+    }
+    &__card{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        background-color: mintcream;
+        margin-top: 60px;
+    }
+    &__desc{
+        &-img{
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        &-name{
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #009ad2;
+        }
+        &-rank{
+            text-align: center;
+            color: #009ad2;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 300;
+        }
+        &-desc{
+            text-align: center;
+            font-size: 16px;
+            color: #000;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+    
+}
+
+
