@@ -10,6 +10,7 @@ header{
 }
 .header{
     &__item{
+        margin-top: 12px;
         a{
             text-decoration: none;
             color: #009ad2;
@@ -22,6 +23,7 @@ header{
     &__about{
         display: grid;
         justify-content: flex-end;
+        align-items: center;
         line-height: normal;
         &-title{
             position: relative;
@@ -42,8 +44,10 @@ header{
         }
     }
     &__text{
+        display: grid;
+        justify-content: end;
         font-size: 20px;
-        color: #009ad2;
+        color: red;
         text-align: center;
     }
     &__phone{
