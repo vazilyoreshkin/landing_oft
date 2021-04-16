@@ -2,6 +2,7 @@
         background-color:aliceblue;
         padding-top: 10px;
     &__video{
+        margin-top: 10px;
         position: relative;
         padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
         height: 0;
@@ -24,7 +25,7 @@
         column-gap: 50px;
         &-form{
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(1,auto);
             align-self: normal;
             label{
                 display: block;
@@ -66,5 +67,14 @@
     &__textarea{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    &__button{
+        margin: 0;
+        margin-top: 10px;
+    }
+    &__triggers{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
