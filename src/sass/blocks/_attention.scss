@@ -1,5 +1,5 @@
 .attention{
-    background: url('../img/Veshikova1.jpg') center no-repeat;;
+    background: url('../img/Veshikova1.jpg') center no-repeat;
     min-height: 134vh;
     &__wrapper{
         display: grid;
@@ -20,6 +20,7 @@
 
     }
     &__subtitle{
+        margin-bottom: 20px;
         font-size: 20px;
         color: #009ad2;
         font-weight: 600;
