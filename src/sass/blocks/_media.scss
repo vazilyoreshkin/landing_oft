@@ -90,7 +90,7 @@
     .contacts{
         &__block{
                 display: grid;
-                grid-template-columns: repeat(1,auto);
+                grid-template-columns: 400px;
                 justify-content: center;
                 align-items: center;
         }
@@ -145,7 +145,7 @@
         }
     }
     .docs{
-        width: fit-content;
+        width: 76vh;
         margin-top: 139px;
         &__about{
             &-wrapper{
@@ -189,13 +189,15 @@
         }
     }
     .attention{
-            &__wrapper{
-                display: grid;
-                grid-template-columns: repeat(1,auto);
-                margin-left: 25px;
-            }
+        width: 76vh;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(1,auto);
+            margin-left: 25px;
+        }
     }
     .persons{
+        width: 76vh;
         &__about{
             display: grid;
             grid-template-columns: repeat(1,auto);
@@ -204,12 +206,14 @@
     }
      
     .contacts{
+        width: 76vh;
         &__block{
                 display: grid;
                 grid-template-columns: repeat(1,auto);
+                margin-left: 5px;
                 &-map{
                     display: grid;
-                    grid-template-columns: repeat(1,auto); 
+                    grid-template-columns: minmax(200px, 500px); 
                 }
         }
         &__input{

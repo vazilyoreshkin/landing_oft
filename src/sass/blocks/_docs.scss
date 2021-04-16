@@ -5,8 +5,7 @@
     margin-top: 109px;
     &__item{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        padding: 55px 0;
+        grid-template-columns: repeat(2,auto);
     }
     &__about{
         &-wrapper{

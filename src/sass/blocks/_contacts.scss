@@ -19,13 +19,13 @@
     }
     &__block{
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: 600px 400px;
         justify-content: center;
         align-items: center;
-        column-gap: 50px;
+        column-gap: 10px;
         &-form{
             display: grid;
-            grid-template-columns: repeat(1,auto);
+            grid-template-columns: 1fr;
             align-self: normal;
             label{
                 display: block;
