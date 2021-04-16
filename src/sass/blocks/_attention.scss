@@ -9,7 +9,7 @@
     }
     &__desc{
         font-size: 20px;
-        color: #000;
+        color: #009ad2;
         font-weight: 600;
         font-style: italic;
         text-align: justify;
@@ -26,6 +26,7 @@
         font-style: italic;
         text-align: justify;
         &-small{
+            color: #858585;;
             text-align: center;
             font-size: 29px;
             font-weight: bold;
@@ -38,7 +39,7 @@
         }
     }
     li{
-        list-style-image: url("../icons/check-red-icon.png");
+        list-style-image: url("../icons/check.png");
     }
     
 

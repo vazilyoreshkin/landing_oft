@@ -18,6 +18,7 @@
             font-size: 15px;
         }
         &__text{
+            justify-content: center;
             font-size: 18px;
         }
         &__phone{
@@ -81,6 +82,11 @@
             margin-top: 70px;
         }
     }
+    .attention{
+        &__wrapper{
+            grid-template-columns: auto;
+        }
+    }
 }   
 @media(max-width: 768px){
     .container{
@@ -100,8 +106,17 @@
             }
         }
     }
+    .attention{
+        background: none;
+       /*  height: 100vh; */
+    }
     .button {
         margin: 10px 0px;
+    }
+    .title__section-title-black{
+        padding-top: 0;
+        font-size: 35px;
+        line-height: normal;
     }
 }
    
@@ -124,11 +139,6 @@
         width: fit-content;
         margin-top: 139px;
         &__about{
-            &-title{
-                :before{
-                    left: -35px;
-                }
-            }
             &-wrapper{
                 display: grid;
                 grid-template-columns: 1fr;
@@ -167,11 +177,15 @@
             &-chek{
                 text-align: center;
             }
-            background-size: auto;
         }
-     
-        
     }
+    .attention{
+            &__wrapper{
+                grid-template-columns: repeat(1,auto);
+                margin-left: 30px;
+            }
+    }
+     
     .title__section-title{
         text-align: center;
         font-size: 30px;

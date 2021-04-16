@@ -2,13 +2,24 @@
     &__section-title{
         color: #fff;
         font-size: 50px;
-            &-black{
-            color: black;
+
+        &-black{
+            color: #858585;
             text-align: center;
         }
-        &-black{
-            color: black;
+        &-special{
+            color: #858585;
             text-align: center;
+        }
+        &-persons{
+            text-align: center;
+            color: #009ad2;;
+            span{
+                color: red;
+                font-size: 34px;
+                text-transform: uppercase;
+            }
         }
     }
+    
 }

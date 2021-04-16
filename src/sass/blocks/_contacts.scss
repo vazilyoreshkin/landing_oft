@@ -19,15 +19,22 @@
     &__block{
         display: grid;
         grid-template-columns: repeat(2,auto);
-        grid-template-rows: repeat (6,auto);
         justify-content: center;
         align-items: center;
         column-gap: 50px;
         &-form{
             display: grid;
             grid-template-columns: 1fr;
-            &:nth-child(2n){
-                padding-bottom: 28px;
+            align-self: normal;
+            label{
+                display: block;
+                position: absolute;
+                height: 18px;
+                padding: 8px 8px;
+                color: #009ad2;
+                font-size: 15px;
+                margin-bottom: 0;
+                text-align: left;
             }
             &-title{
                 text-align: center;
@@ -50,5 +57,14 @@
             }    
         }
         
+    }
+    &__input{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 10px;
+    }
+    &__textarea{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
