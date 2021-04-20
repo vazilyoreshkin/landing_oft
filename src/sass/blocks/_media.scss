@@ -30,12 +30,6 @@
         
     }
     .docs{
-        &__about{
-            &-img{
-                width: 80%;
-            }
-        }
-
         &__desc{
             &-name{
                 font-size: 24px;
@@ -45,6 +39,7 @@
             }
         }
     }
+    
     .title__section-title{
         font-size: 41px;
         text-align: center;
@@ -64,7 +59,7 @@
     }
     .header{
         &__item{
-            grid-template-columns: repeat(2, auto);
+            grid-template-columns: repeat(2,fr);
         }
         &__text{
             display: none;
@@ -75,8 +70,8 @@
     }
     .docs{
         &__item{
-            display: grid;
-            grid-template-columns: repeat(1,auto);
+        grid-template-columns: minmax(360px,480px);
+        justify-content: center;
         }
         &__facts{
             margin-top: 70px;
@@ -85,6 +80,11 @@
     .attention{
         &__wrapper{
             grid-template-columns: auto;
+        }
+    }
+    .persons{
+        &__wrapper{
+            grid-template-columns: repeat(2,1fr)
         }
     }
     .contacts{
@@ -108,18 +108,38 @@
             font-size: 13px;
         }
         &__phone {
-            align-items: flex-end;
             &-text{
+                margin-bottom: 10px;
                 font-size: 22px;
             }
         }
     }
+    .docs{
+        &__item{
+            padding-top: 20px;
+        }
+    }
     .attention{
         background: none;
+        &__wrapper{
+            grid-template-columns: auto;
+        }
        /*  height: 100vh; */
     }
+
+    .persons{
+        &__wrapper{
+            grid-template-columns: auto;
+            justify-items: center;
+        }
+    }
+    .contacts{
+        &__button{
+            margin-top: 10px;
+        }
+    }
     .button {
-        margin: 10px 0px;
+        margin: 0 auto;
     }
     .title__section-title-black{
         padding-top: 0;
@@ -139,29 +159,26 @@
     }
     .header{
         &__item{
-            grid-template-columns: repeat(1,auto);
-            grid-template-rows: repeat(3,auto);
-            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,auto);
+            justify-items: center;
         }
     }
     .docs{
-        width: 76vh;
         margin-top: 139px;
+        &__item{
+            grid-template-columns: minmax(300px,360px);
+            justify-items: center;
+        }
         &__about{
             &-wrapper{
-                display: grid;
-                grid-template-columns: 1fr;
-                width: fit-content;
+                grid-template-columns: repeat(1,auto);
                 justify-items: center;
-            }
-            &-img{
-                width: 60%;
             }
             &-quotation{
                 text-align: center;
             }
         }
-
         &__desc{
             &-name{
                 font-size: 18px;
@@ -175,8 +192,10 @@
             }
         }
         &__facts{
-            background: none;
-            background-color: #fff;
+           padding: 10px 10px;
+           li{
+            list-style-image: none;
+           }
             &-title{
                 font-size: 30px;
             }
@@ -184,37 +203,41 @@
                 font-size: 25px;
             }
             &-chek{
+                padding: 10px 0 10px 0;
                 text-align: center;
             }
         }
     }
     .attention{
-        width: 76vh;
         &__wrapper{
             display: grid;
             grid-template-columns: repeat(1,auto);
             margin-left: 25px;
+            justify-items: center;
         }
     }
     .persons{
-        width: 76vh;
         &__about{
             display: grid;
             grid-template-columns: repeat(1,auto);
-            margin-left: 25px;
+            justify-items: center;
+        }
+        &__desc{
+            &-tab{
+                margin-left: 25px;
+            }
         }
     }
      
     .contacts{
-        width: 76vh;
         &__block{
+            display: grid;
+            grid-template-columns: repeat(1,auto);
+            margin-left: 5px;
+            &-map{
                 display: grid;
-                grid-template-columns: repeat(1,auto);
-                margin-left: 5px;
-                &-map{
-                    display: grid;
-                    grid-template-columns: minmax(200px, 500px); 
-                }
+                grid-template-columns: minmax(200px, 500px); 
+            }
         }
         &__input{
             display: grid;
@@ -231,13 +254,10 @@
         text-align: center;
         font-size: 30px;
     }
-    .button-facts{
-        margin: 0 auto;
-        width: fit-content;
+    .button{
+        &-facts{
+            margin: 0 auto;
+            width: 300px;
+        }
     }
 }
-
-
-
-
-

@@ -8,8 +8,10 @@
     margin: 10px 0px 0px 65px;
     cursor: pointer;
     &-facts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
-        padding: 16px;
         width: 100%;
         font-size: 24px;
     }
